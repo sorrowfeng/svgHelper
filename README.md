@@ -83,11 +83,10 @@ if(!svgPaths.isEmpty()) {
 ```
 ## 🖼️ 效果演示
 
-### 原始SVG图像
-![](https://img-blog.csdnimg.cn/ddb7442ad1064a5186f0a48c468131d2.png)
 
-### 解析后绘制效果
-![](https://img-blog.csdnimg.cn/886708a50a3b40489b83571f60f63d28.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5pyo6aOO5Y-v5Y-v,size_20,color_FFFFFF,t_70,g_se,x_16)
+| 原始SVG图像 | 解析渲染效果 |
+|-------------|-------------|
+| ![原图](https://img-blog.csdnimg.cn/ddb7442ad1064a5186f0a48c468131d2.png) | ![解析后](https://img-blog.csdnimg.cn/886708a50a3b40489b83571f60f63d28.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5pyo6aOO5Y-v5Y-v,size_20,color_FFFFFF,t_70,g_se,x_16) |
 
 ## 📌 实现原理
 SVGHelper 通过 Qt 的 QSvgRenderer 类解析 SVG 文件，然后：
