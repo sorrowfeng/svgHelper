@@ -1,7 +1,7 @@
 # SVGHelper - Qt SVG 路径解析工具
 
 ![Qt](https://img.shields.io/badge/Qt-5.12%2B-brightgreen) 
-![License](https://img.shields.io/badge/license-MIT-blue)
+![License](https://img.shields.io/badge/license-Apache2.0-blue)
 
 一个轻量级的 Qt 工具类，用于解析 SVG 文件中的所有路径信息并转换为 QPainterPath 对象。
 
@@ -120,4 +120,4 @@ find_package(Qt5 REQUIRED COMPONENTS Svg)
 ```
 
 ## 📜 开源协议
-本项目采用 MIT 许可证 开源，您可以自由使用于商业和非商业项目。
+本项目采用 Apache2.0 许可证 开源，您可以自由使用于商业和非商业项目。
