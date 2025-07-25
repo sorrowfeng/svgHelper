@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QDebug>
 
-#include "svghelper.h"
+#include "svghelper.hpp"
 
 int main(int argc, char* argv[]) {
   QApplication a(argc, argv);
@@ -9,6 +9,8 @@ int main(int argc, char* argv[]) {
   SvgHelper helper;
   helper.parseSvgImage("../../example.svg");
   auto svgPaths = helper.getSvgPathList();
+
+  qDebug() << svgPaths;
 
   return a.exec();
 }

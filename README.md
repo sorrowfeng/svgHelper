@@ -3,7 +3,7 @@
 ![Qt](https://img.shields.io/badge/Qt-5.12%2B-brightgreen) 
 ![License](https://img.shields.io/badge/license-Apache2.0-blue)
 
-一个轻量级的 Qt 工具类，用于解析 SVG 文件中的所有路径信息并转换为 QPainterPath 对象。
+一个轻量的单头文件工具类，用于解析 SVG 文件中的所有路径信息并转换为 QPainterPath 对象。
 
 ## ✨ 功能特性
 
@@ -17,13 +17,13 @@
 ### 基本用法
 
 ```cpp
-#include "svghelper.h"
+#include "svghelper.hpp"
 
 // 初始化解析器
 SvgHelper svgHelper;
 
 // 解析SVG文件
-svgHelper.parseSvgImage("example.svg");
+svgHelper.parseSvg("example.svg");
 
 // 获取所有路径
 QList<QPainterPath> paths = svgHelper.getSvgPathList();
@@ -36,21 +36,8 @@ QPixmap preview = svgHelper.getSvgImage();
 ### 1. 在窗口中绘制SVG路径
 
 ```cpp
-// MainWindow.h
-#include <QMainWindow>
-#include "svghelper.h"
-
-class MainWindow : public QMainWindow {
-    Q_OBJECT
-public:
-    MainWindow(QWidget *parent = nullptr);
-    void paintEvent(QPaintEvent *event) override;
-    
-private:
-    QList<QPainterPath> svgPaths;
-};
-
 // MainWindow.cpp
+#include "svghelper.hpp"
 MainWindow::MainWindow(QWidget *parent) 
     : QMainWindow(parent) {
     SvgHelper helper;
@@ -119,7 +106,7 @@ QT += svg
 ```
 或 CMake:
 ```cmake
-find_package(Qt5 REQUIRED COMPONENTS Svg SvgWidgets Xml)
+find_package(Qt6 REQUIRED COMPONENTS Svg SvgWidgets Xml)
 ```
 
 ## 📜 开源协议
