@@ -75,10 +75,6 @@ if(!svgPaths.isEmpty()) {
 |-------------|-------------|
 | ![原图](https://img-blog.csdnimg.cn/ddb7442ad1064a5186f0a48c468131d2.png) | ![解析后](https://img-blog.csdnimg.cn/886708a50a3b40489b83571f60f63d28.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5pyo6aOO5Y-v5Y-v,size_20,color_FFFFFF,t_70,g_se,x_16) |
 
-## ✨ Star历史
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sorrowfeng/svgHelper&type=Date)](https://www.star-history.com/#sorrowfeng/svgHelper&Date)
-
 ## 📌 实现原理
 SVGHelper 通过 Qt 的 QSvgRenderer 类解析 SVG 文件，然后：
 
@@ -108,6 +104,11 @@ QT += svg
 ```cmake
 find_package(Qt6 REQUIRED COMPONENTS Svg SvgWidgets Xml)
 ```
+
+## ✨ Star历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sorrowfeng/svgHelper&type=Date)](https://www.star-history.com/#sorrowfeng/svgHelper&Date)
+
 
 ## 📜 开源协议
 本项目采用 Apache2.0 许可证 开源，您可以自由使用于商业和非商业项目。
